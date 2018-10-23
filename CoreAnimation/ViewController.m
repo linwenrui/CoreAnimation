@@ -29,7 +29,6 @@ view的leyer，view是layer的代理
  图层不但给自己提供可视化的内容和管理动画,而且充当了其他图层的容器类,构建图层层次结构
  
  图层树类似于UIView 的层次结构, 一个view 实例拥有父视图(superView)和子视图(subView);同样一个 layer 也有父图层(superLayer)和子图层(subLayer).我们可以直接在 view 的 layer 上添加子 layer 达到一些显示效果,但这些单独的 layer 无法像 UIView 那样进行交互响应.
- 
  */
 
 @interface ViewController ()
