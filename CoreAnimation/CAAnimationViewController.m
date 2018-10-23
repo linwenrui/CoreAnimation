@@ -44,6 +44,12 @@
  
  所谓动画实际上就是在不同的时间显示不同画面,时间在走进而形成连续变化的效果.所以,动画的关键及时对时间的控制.
  
+ CAMediaTiming:
+ 
+ CAMeidaTiming 是 CoreAnimation中一个非常重要的协议, CALayer 和 CAAnimation 都实现了它来对时间进行管理.
+ 1, @protocol CAMediaTiming
+ 2, @property CFTimeInterval beginTime;
+ 3, @property CFTimeInterval duration;
  
  */
 
