@@ -50,6 +50,15 @@
  1, @protocol CAMediaTiming
  2, @property CFTimeInterval beginTime;
  3, @property CFTimeInterval duration;
+ 4, @property float speed;
+ // timeOffset时间的偏移量,用它可以实现动画的暂停,继续等效果
+ 5, @property CFTimeInterval timeOffset;
+ 6, @property float repeatCount;
+ 7, @property CFTimeInterval repeatDuration;
+ // autoreverses为 true时时间结束后会原路返回,默认为 false
+ 8, @property BOOL autoreverses;
+ // fillMode 填充模式,有4种
+ 9, @property (copy) NSString *fillMode;
  
  */
 
