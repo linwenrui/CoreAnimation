@@ -59,6 +59,11 @@
  8, @property BOOL autoreverses;
  // fillMode 填充模式,有4种
  9, @property (copy) NSString *fillMode;
+ @end
+ 
+ 需要注意的是,CALayer也实现了 CAMediaTiming协议,也就是说如果我们将 layer 的 speed 设置为2,那么加到这个 layer 上的动画都会以两倍速度执行
+ 上面从图层,动画和时间控制的关系上简单认识了 CALayer,属性动画和动画时间控制,了解属性动画是根据时间在个关键帧之间进行插值,随时间连续改变 layer 的某动画属性来实现的
+ 
  
  */
 
